@@ -2,6 +2,14 @@
 	"name": "sendbird/sendbird-laravel",
 	"type": "library",
 	"description": "Library for using Sendbird REST API",
+	"keywords": ["php", "laravel", "sendbird", "chat"],
+	"authors": [
+		{
+			"name": "Ainee Chong",
+			"email": "chongstreet@gmail.com",
+			"role": "Developer"
+		}
+	],
 	"autoload": {
 		"psr-4": {
 			"SendBird\\": "src/"
