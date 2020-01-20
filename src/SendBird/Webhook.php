@@ -6,7 +6,7 @@ class Webhook
 {
     public function validateResponse($payload, $x_signature)
     {
-        $secret = env('SENDBIRD_MASTER_TOKEN', '');
+        $secret = config('master_token');
 
         $signature = hash_hmac('sha256', $payload, $secret);
 

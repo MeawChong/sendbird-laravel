@@ -13,7 +13,7 @@ abstract class BaseRequest
 
     public function __construct()
     {
-        $this->app_id = env('SENDBIRD_APP_ID', '');
+        $this->app_id = config('app_id');
 
         $this->base_url = "https://api-{$this->app_id}.sendbird.com/v3";
 
@@ -26,7 +26,7 @@ abstract class BaseRequest
             'http_errors' => false,
             'headers' => [
                 'Content-Type' => "application/json, charset=utf8",
-                'Api-Token' => env('SENDBIRD_MASTER_TOKEN', ''),
+                'Api-Token' => config('master_token'),
                 'Accept' => "application/json"
             ]
         ];
