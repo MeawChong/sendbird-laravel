@@ -2,7 +2,7 @@
 
 namespace SendBird\Requests;
 
-use Carbon;
+use Carbon\Carbon;
 
 class User extends BaseRequest
 {
